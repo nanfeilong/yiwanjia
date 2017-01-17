@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context=".MyPropertyActivity" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/view_line_middle" />
+    
+    <RelativeLayout
+        android:id="@+id/rlayout_mywallet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_40"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_account_money"
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="16dp"
+            android:text="万家豆"
+            android:textColor="@color/color_2b2b2b"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_mywallet_account_money"
+            style="@style/wrap_centerVertical"
+            android:layout_alignBaseline="@+id/tv_account_money"
+            android:layout_alignBottom="@+id/tv_account_money"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/tv_account_money"
+            android:text="2016个"
+            android:textColor="@color/color_e20d11"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+</LinearLayout>

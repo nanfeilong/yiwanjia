@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_8"
+        android:background="@color/color_f1f1f1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_d6d7dc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/good_shop_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp_value_14"
+            android:layout_marginTop="@dimen/dp_value_10"
+            android:src="@drawable/shop_logo" />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/good_shop_logo"
+            android:layout_marginLeft="@dimen/dp_value_8"
+            android:layout_marginTop="@dimen/dp_value_6"
+            android:layout_toRightOf="@+id/good_shop_logo"
+            android:text="小四代购"
+            android:textSize="@dimen/text_size_13" />
+
+        <ImageView
+            android:id="@+id/goodShopVipIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/shop_name"
+            android:layout_marginLeft="@dimen/dp_value_5"
+            android:layout_marginTop="@dimen/dp_value_2"
+            android:layout_toRightOf="@+id/shop_name"
+            android:src="@drawable/good_shop_vip" />
+
+        <Button
+            android:id="@+id/goodShopBt"
+            android:layout_width="@dimen/dp_value_60"
+            android:layout_height="@dimen/dp_value_20"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dp_value_12"
+            android:layout_marginTop="@dimen/dp_value_15"
+            android:background="@drawable/good_shop_bt"
+            android:gravity="center"
+            android:text="进入店铺"
+            android:textSize="@dimen/text_size_11" />
+
+        <cn.junyun.mall.view.GoodShopLeftIv
+            android:id="@+id/goodShopView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/good_shop_logo"
+            android:layout_below="@+id/good_shop_logo"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/good_shop_left" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/goodShopView1"
+            android:layout_alignTop="@id/goodShopView1"
+            android:layout_toRightOf="@id/goodShopView1" />
+
+        <cn.junyun.mall.view.GoodShopRightIv
+            android:id="@+id/good_shop_right_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view1"
+            android:layout_marginRight="@dimen/dp_value_14"
+            android:layout_toRightOf="@+id/view1"
+            android:src="@drawable/good_shop_right11" />
+
+        <cn.junyun.mall.view.GoodShopRightIv
+            android:id="@+id/good_shop_right_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/good_shop_right_item1"
+            android:layout_below="@+id/good_shop_right_item1"
+            android:layout_marginRight="@dimen/dp_value_14"
+            android:layout_marginTop="@dimen/dp_value_5"
+            android:src="@drawable/good_shop_right22" />
+
+        <TextView
+            android:id="@+id/goodShopTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goodShopView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_value_11"
+            android:paddingBottom="@dimen/dp_value_11"
+            android:text="五星级好评,一定值得逛哦"
+            android:textSize="@dimen/text_size_13" />
+    </RelativeLayout>
+
+</LinearLayout>

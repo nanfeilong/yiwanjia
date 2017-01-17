@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <cn.junyun.mall.view.ImageViewSquare
+        android:id="@+id/category_right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_value_10"
+        android:scaleType="fitCenter" />
+    
+        <TextView
+        android:id="@+id/category_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_right_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_value_10"
+        android:layout_marginTop="@dimen/dp_value_10"
+        android:singleLine="true"
+        android:text="衬衫"
+        android:textColor="@color/color_2b2b2b"
+        android:textSize="@dimen/text_size_12" />
+    
+   
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.junyun.mall"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 判断网络是否连接 wifi是否可用 是否连接的是3G 是否连接的是wifi 当前的网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于判断 访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 允许程序在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 调用拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="cn.junyun.mall.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.junyun.mall.activity.home.HomeTabActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.junyun.mall.activity.member.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="cn.junyun.mall.activity.member.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="cn.junyun.mall.activity.member.RetrieveActivity"
+            android:label="@string/title_activity_retrieve" >
+        </activity>
+        <activity
+            android:name="cn.junyun.mall.activity.member.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password" >
+        </activity>
+        <activity
+            android:name="cn.junyun.mall.activity.fistjump.SignInActivity"
+            android:label="@string/title_activity_sign_in" >
+        </activity>
+
+        <!-- 我的商城>>>我的订单 -->
+        <activity
+            android:name="cn.junyun.mall.activity.order.MyOrderActivity"
+            android:label="@string/title_activity_my_order" >
+        </activity>
+        <!-- 二级分类 -->
+        <activity
+            android:name="cn.junyun.mall.activity.catgegory.CategoryActivity"
+            android:label="@string/title_activity_category" >
+        </activity>
+
+        <!-- 一级分类 -->
+         <activity
+            android:name="cn.junyun.mall.activity.catgegory.CategoryOneLeveActivity"
+            android:label="@string/title_activity_category" >
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e1e1e1"
+    tools:context=".ProviceAddressSelectActivity" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_header" />
+    <View 
+        android:id="@+id/spilt_view"
+        android:layout_width="match_parent"
+         android:layout_height="@dimen/dp_value_1"
+         android:background="@color/color_d6d7dc"
+         android:layout_below="@+id/title"/>
+
+    <cn.junyun.mall.view.AddressListView
+        android:id="@+id/provice_lv"
+        android:layout_marginTop="@dimen/dp_value_10"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/spilt_view"
+        android:divider="@color/color_e1e1e1"
+        android:dividerHeight="@dimen/dp_value_1"
+        android:layout_height="match_parent" 
+        android:background="@color/white">
+    </cn.junyun.mall.view.AddressListView>
+    
+
+</RelativeLayout>

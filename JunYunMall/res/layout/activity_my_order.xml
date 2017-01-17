@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyOrderActivity" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_header" />
+
+    <View style="@style/View_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/background_bottom_red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_tv_myorder_all"
+            android:textColor="@color/tv_item_color_black" />
+
+        <TextView
+            android:id="@+id/tv_wait_pay_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_wait_pay_money"
+            android:textColor="@color/tv_item_color_black" />
+
+        <TextView
+            android:id="@+id/tv_wait_send_goods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_wait_send_goods"
+            android:textColor="@color/tv_item_color_black" />
+
+        <TextView
+            android:id="@+id/tv_wait_receive_goods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_wait_receive_goods"
+            android:textColor="@color/tv_item_color_black" />
+
+        <TextView
+            android:id="@+id/tv_wait_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_wait_comment"
+            android:textColor="@color/tv_item_color_black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/view_line_middle" />
+    
+    <FrameLayout
+        android:id="@+id/fl_order_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

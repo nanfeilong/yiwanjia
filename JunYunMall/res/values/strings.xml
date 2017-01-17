@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">亿万家商城</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">亿万家商城</string>
+    <string name="str_some">亿万家</string>
+
+    <!-- 以下为规范命名原则 -->
+    <string name="str_home_page">首页</string>
+    <string name="str_classification">商品分类</string>
+    <string name="str_shopping_cart">购物车</string>
+    <string name="str_my_mall">我的商城</string>
+    <string name="no_set">这个是自由设置</string>
+
+    <!-- fxr -->
+    <!-- login -->
+    <string name="str_login">登录</string>
+    <string name="str_change_password">修改登录密码</string>
+    <string name="str_register">注册</string>
+    <string name="str_lose">忘记密码</string>
+    <string name="str_re">找回密码</string>
+    <string name="str_login_user">用户名/手机号</string>
+    <string name="str_login_pasword">请输入密码</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <!-- register -->
+    <string name="str_tel">手机号</string>
+    <string name="str_input_tel">请输入手机号</string>
+    <string name="str_get_yan">获取验证码</string>
+    <string name="str_yan">验证码</string>
+    <string name="str_old_password">原密码</string>
+    <string name="str_input_yan">请输入验证码</string>
+    <string name="str_password_register">密    码</string>
+    <string name="str_password_register_re">新密码</string>
+    <string name="str_password_re_new">确认密码</string>
+    <string name="str_password_hint">字母和数字的组合</string>
+    <string name="str_relpassword">确认密码</string>
+    <string name="str_referrer">推荐人</string>
+    <string name="str_referrer_name">推荐人用户名</string>
+    <string name="str_have">已有账号？直接登陆</string>
+    <!-- sign_in -->
+    <string name="str_sign_in_username">爆炒大熊猫</string>
+    <string name="str_sign_in_rule">签到规则</string>
+    <string name="str_sign_in">签到</string>
+    <string name="str_sign_in_day">天</string>
+    <string name="str_sign_in_all_no">累计签到</string>
+    <string name="str_sign_in_all_dou">累计万家豆</string>
+    <string name="str_sign_in_touch">点击签到</string>
+    <string name="str_sign_in_first">1.每天可签到一次；</string>
+    <string name="str_sign_in_second">2.每签到一次可获得10个万家豆；</string>
+    <string name="str_sign_in_third">3.累计签到满当月工作天数，即可获得奖励10个万家豆。</string>
+    <!-- home -->
+    <string name="str_home_head">亿万家</string>
+    <string name="str_panic_buying_logo">疯狂抢购</string>
+    <string name="str_doudoumall_logo">豆豆商城</string>
+    <string name="str_recommend">精品推荐</string>
+    <string name="str_home_list_tv">必买清单</string>
+
+    <!-- MyMall -->
+    <string name="str_wait_pay_money">待付款</string>
+    <string name="str_wait_send_goods">待发货</string>
+    <string name="str_wait_receive_goods">待收货</string>
+    <string name="str_wait_comment">待评价</string>
+    <string name="str_return_goods">退换货</string>
+    <string name="str_return_goods_aftersale">退款/售后</string>
+    <string name="str_return_goods_aftersale2">申请退款</string>
+    <string name="str_tv_myaccount_headphoto">亿万家头像</string>
+    <string name="str_tv_mymall_myorder">我的订单</string>
+    <string name="str_tv_mymall_mywallet">我的钱包</string>
+    <string name="str_tv_mymall_myproperty">我的财产</string>
+    <string name="str_tv_mymall_myachievement">我的成就</string>
+    <string name="str_tv_mymall_myaccount">我的账户</string>
+    <string name="str_tv_myaccount_addressmanage">收货地址管理</string>
+    <string name="str_tv_myaccount_new_address">添加新地址</string>
+    <string name="str_tv_alter_address">修改地址</string>
+    <string name="str_tv_save">保存</string>
+    <string name="str_tv_mymall_mycollect">收藏</string>
+    <string name="str_tv_mymall_myfootprint">足迹</string>
+    <string name="str_tv_mymall_myfootprint_allsize">我的足迹</string>
+    <string name="str_tv_myorder_all">全部</string>
+    <string name="str_yes">确认</string>
+    <string name="camera_pop_camera">相机拍摄</string>
+    <string name="camera_pop_album">从相册选取</string>
+    <string name="camera_pop_normal">使用默认</string>
+    <string name="camera_pop_cancel">取消</string>
+    <string name="title_activity_retrieve">RetrieveActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_activity_my_order">MyOrderActivity</string>
+
+    <!-- 分类 -->
+    <string name="str_default">默认</string>
+    <string name="str_sales">销量</string>
+    <string name="str_sentiment">人气</string>
+    <string name="str_price">价格</string>
+    <string name="str_share">分享</string>
+    <string name="str_merchants_certification">商家认证</string>
+    <string name="str_authentic_guarantee">正品保障</string>
+    <string name="str_seven_days_return">七天退换</string>
+    <string name="str_customer_service">客服</string>
+    <string name="str_store">店铺</string>
+    <string name="str_add_shopcart">加入购物车</string>
+    <string name="str_buy_now">立即购买</string>
+    <string name="str_splease_choose_color_size">请选择颜色分类和尺码</string>
+    <string name="title_activity_choose_picture">ChoosePictureActivity</string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="title_activity_panic_buying">PanicBuying</string>
+    <!-- 精品推荐 -->
+    <string name="str_reommend">精品推荐</string>
+    <!-- 疯狂抢购 -->
+    <string name="str_panic_buying">限时限量  疯狂抢购</string>
+    <string name="str_panic_buying_head">疯狂抢购</string>
+    <string name="str_panic_buying_count_down_text">距离本场结束:</string>
+    <string name="title_activity_toadyprice">ToadypriceActivity</string>
+    <!-- 今日好点 -->
+    <string name="str_good_shop">品牌街</string>
+    <!-- 品牌街 -->
+    <string name="str_brand_street">品牌街</string>
+    <!-- 新品上新 -->
+    <string name="str_arrival">新品上新</string>
+    <!-- 热卖商品 -->
+    <string name="str_best">热卖商品</string>
+
+    <!-- 豆豆商城 -->
+    <string name="str_good_game">精彩活动</string>
+    <string name="str_doudou_huangou">豆豆换购</string>
+    <string name="str_doudou_mall">豆豆商城</string>
+    <string name="str_doudou_mall_more">更多>></string>
+
+    <!-- 今日特价 -->
+    <string name="str_today_price">今日特价</string>
+    <string name="title_activity_recommend">RecommendActivity</string>
+    <!-- 精品推荐 -->
+    <string name="str_recommend_good">人说好</string>
+    <string name="title_activity_brands_street">BrandsStreetActivity</string>
+    <string name="title_activity_make_sure_order">MakeSureOrderActivity</string>
+
+    <!-- 确认订单 -->
+    <string name="str_confirm_order">确认订单</string>
+    <string name="str_order_sddress_tip">(收货不便时，可选附近物流自提点自行提取)</string>
+    <string name="title_activity_my_wallet">MyWalletActivity</string>
+    <string name="title_activity_my_property">MyPropertyActivity</string>
+    <string name="title_activity_my_achievement">MyAchievementActivity</string>
+    <string name="title_activity_good_shop">GoodShopActivity</string>
+    <string name="title_activity_arrival">ArrivalActivity</string>
+    <string name="str_use_ththousand_bean">使用万家豆</string>
+    <string name="str_unit_a">个</string>
+    <string name="str_arrive">抵</string>
+    <string name="str_use_coupons">使用优惠券</string>
+    <string name="str_in_distribution">配送方式:</string>
+    <string name="str_buyer_message">买家留言:</string>
+    <string name="str_buyer_messag_tip">选填，填写你和卖家达成一致的要求</string>
+    <string name="str_color_category">颜色分类:</string>
+    <string name="str_size">尺码：</string>
+    <string name="str_total">合计：</string>
+    <string name="title_activity_best_seller">BestSellerActivity</string>
+    <string name="str_goods_details">商品详情</string>
+    <string name="str_check_all_evlation">查看全部评价</string>
+    <string name="title_activity_dou_dou_mall">DouDouMallActivity</string>
+    <string name="title_activity_my_collect">MyCollectActivity</string>
+    <string name="title_activity_my_foot_print">MyFootPrintActivity</string>
+    <string name="title_activity_address_manage">AddressManageActivity</string>
+    <string name="title_activity_all_evalution">AllEvalutionActivity</string>
+    <string name="str_baby_evlution">宝贝评价</string>
+    <string name="str_select_address">选择地区</string>
+    <string name="title_activity_show_image">ShowImageActivity</string>
+    <string name="title_activity_return_goods">ReturnGoodsActivity</string>
+    <string name="title_activity_dou_dou_huan_gou">DouDouHuanGouActivity</string>
+    <string name="title_activity_provice_address_select">ProviceAddressSelectActivity</string>
+    <string name="title_activity_address_new">AddressNewActivity</string>
+    <string name="title_activity_apply_for_refund">ApplyForRefundActivity</string>
+
+</resources>

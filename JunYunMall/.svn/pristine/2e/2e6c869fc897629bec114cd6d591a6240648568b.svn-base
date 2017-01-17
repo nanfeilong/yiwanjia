@@ -1,0 +1,178 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical"
+    tools:context=".DouDouMallActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title"
+            layout="@layout/layout_header" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_1" />
+        <!-- 头部广告条 -->
+
+        <cn.junyun.mall.view.DouDouMallHead
+            android:id="@+id/douDouMallHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dou_dou_mall_head" >
+        </cn.junyun.mall.view.DouDouMallHead>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_32" >
+
+            <TextView
+                android:id="@+id/doudouJingPinHuoDong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_value_10"
+                android:text="@string/str_good_game"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+
+        <cn.junyun.mall.view.DouDouMallGroup1
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="@dimen/dp_value_10"
+                android:layout_height="wrap_content" />
+
+            <cn.junyun.mall.view.DouDouMall1
+                android:id="@+id/doudoumall1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doudoumall1" >
+            </cn.junyun.mall.view.DouDouMall1>
+
+            <View
+                android:layout_width="@dimen/dp_value_5"
+                android:layout_height="wrap_content" />
+
+            <cn.junyun.mall.view.DouDouMall2
+                android:id="@+id/doudoumall2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doudoumall2" >
+            </cn.junyun.mall.view.DouDouMall2>
+
+            <View
+                android:layout_width="@dimen/dp_value_10"
+                android:layout_height="wrap_content" />
+        </cn.junyun.mall.view.DouDouMallGroup1>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_5" />
+
+        <cn.junyun.mall.view.DouDouMallGroup2
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_value_10"
+            android:layout_marginRight="@dimen/dp_value_10"
+            android:orientation="horizontal" >
+
+            <cn.junyun.mall.view.DouDouMall3
+                android:id="@+id/doudoumall3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doudoumall3" >
+            </cn.junyun.mall.view.DouDouMall3>
+
+            <View
+                android:layout_width="@dimen/dp_value_5"
+                android:layout_height="wrap_content" />
+
+            <cn.junyun.mall.view.DouDouMall4
+                android:id="@+id/doudoumall4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doudoumall4" >
+            </cn.junyun.mall.view.DouDouMall4>
+
+            <View
+                android:layout_width="@dimen/dp_value_5"
+                android:layout_height="wrap_content" />
+
+            <cn.junyun.mall.view.DouDouMall5
+                android:id="@+id/doudoumall5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doudoumall5" >
+            </cn.junyun.mall.view.DouDouMall5>
+
+        </cn.junyun.mall.view.DouDouMallGroup2>
+
+        <!-- 豆豆换购 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_32" >
+
+            <TextView
+                android:id="@+id/doudouHuanGou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_value_10"
+                android:text="@string/str_doudou_huangou"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+
+        <!-- 底部GridView -->
+
+        <cn.junyun.mall.view.MyGridView
+            android:id="@+id/douDouGV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_value_10"
+            android:layout_marginRight="@dimen/dp_value_10"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:horizontalSpacing="@dimen/dp_value_5"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/dp_value_6" >
+        </cn.junyun.mall.view.MyGridView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_value_5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/doudouBottomBt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_value_30"
+                android:layout_marginBottom="@dimen/dp_value_5"
+                android:layout_marginLeft="@dimen/dp_value_10"
+                android:layout_marginRight="@dimen/dp_value_10"
+                android:background="@drawable/dou_dou_button"
+                android:text="@string/str_doudou_mall_more"
+                android:textColor="@color/color_969696"
+                android:textSize="@dimen/dp_value_13" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_value_5" />
+    </LinearLayout>
+
+</ScrollView>

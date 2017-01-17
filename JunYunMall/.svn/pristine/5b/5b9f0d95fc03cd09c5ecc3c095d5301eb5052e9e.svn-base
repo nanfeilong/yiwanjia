@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <cn.junyun.mall.view.DouDouHuanGouIv
+            android:id="@+id/doudouhuangouiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_value_10"
+            android:layout_marginLeft="@dimen/dp_value_10"
+            android:layout_marginRight="@dimen/dp_value_10"
+            android:layout_marginTop="@dimen/dp_value_10"
+            android:src="@drawable/huangouitem" >
+        </cn.junyun.mall.view.DouDouHuanGouIv>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/douDouHuanGouTv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:maxEms="17"
+                android:text="CK凯文迪卡(CalvinKlein) CITY系列男表夜光皮表石英表K2G21107"
+                android:textColor="@color/color_2b2b2b"
+                android:textSize="@dimen/text_size_13" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/douDouHuanGouTv1"
+                android:layout_below="@+id/douDouHuanGouTv1"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/wanjiadou" />
+
+            <TextView
+                android:id="@+id/douDouHuanGouTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="1000"
+                android:textColor="@color/color_e20d11"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:id="@+id/douDouHuanGouTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_value_8"
+                android:text="市场价："
+                android:textColor="@color/color_2b2b2b"
+                android:textSize="@dimen/text_size_11" />
+
+            <TextView
+                android:id="@+id/douDouHuanGouTv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/douDouHuanGouTv2"
+                android:layout_toRightOf="@+id/douDouHuanGouTv2"
+                android:text="￥200"
+                android:textColor="@color/color_2b2b2b"
+                android:textSize="@dimen/text_size_11" />
+
+            <TextView
+                android:id="@+id/douDouHuanGouTv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/douDouHuanGouTv3"
+                android:layout_alignBottom="@+id/douDouHuanGouTv3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_value_12"
+                android:text="已经有15人换购"
+                android:textColor="@color/color_2b2b2b"
+                android:textSize="@dimen/text_size_11" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_e1e1e1" />
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context=".MyAccountActivity" >
+    <View
+         android:id="@+id/gone_view"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_value_0"/>
+ 
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/view_line_middle" />
+    <!-- 亿万家头像 -->
+
+    <RelativeLayout
+        android:id="@+id/rlayout_myaccount_myhead"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_myaccount_myhead"
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:text="@string/str_tv_myaccount_headphoto"
+            android:textColor="#2b2b2b"
+            android:textSize="@dimen/text_size_14" />
+
+        <cn.junyun.mall.view.ImageViewCircle
+            android:id="@+id/iv_head_myaccount"
+            android:layout_width="@dimen/dp_value_40"
+            android:layout_height="@dimen/dp_value_40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/iv_myhead_next_page"
+            android:src="@drawable/iv_circle"
+            app:border_color="@color/iv_circle_white"
+            app:border_width="@dimen/dp_value_1" />
+
+        <ImageView
+            android:id="@+id/iv_myhead_next_page"
+            style="@style/wrap_centerVertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/iv_next_page" />
+    </RelativeLayout>
+
+    <View style="@style/View_line" />
+    <!-- 待付款 待发货 待收货 待评价 退款售后 -->
+    <!-- 会员昵称 -->
+
+    <RelativeLayout
+        android:id="@+id/rlayout_mycount_vipname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_50"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="12dp"
+            android:text="会员昵称"
+            android:textColor="@color/tv_item_color_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_mycount_vipname"
+            style="@style/wrap_centerVertical"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/iv_myvipname_next_page"
+            android:text="爆炒大熊猫"
+            android:textColor="#969696"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_myvipname_next_page"
+            style="@style/wrap_centerVertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/iv_next_page" />
+    </RelativeLayout>
+
+    <View style="@style/View_line" />
+    <!-- 待付款 待发货 待收货 待评价 退款售后 -->
+
+
+    <!-- 手机号 -->
+
+    <RelativeLayout
+        android:id="@+id/rlayout_mycount_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_50"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="12dp"
+            android:text="手机号"
+            android:textColor="@color/tv_item_color_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_mycount_phonenumber"
+            style="@style/wrap_centerVertical"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/iv_phonenumber_next_page"
+            android:text="13468615895"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_phonenumber_next_page"
+            style="@style/wrap_centerVertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/iv_next_page" />
+    </RelativeLayout>
+
+    <View style="@style/View_line" />
+    <!-- 修改密码 -->
+
+    <RelativeLayout
+        android:id="@+id/rlayout_mycount_changepassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_50"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="12dp"
+            android:text="修改密码"
+            android:textColor="@color/tv_item_color_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv__changepassword_next_page"
+            style="@style/wrap_centerVertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/iv_next_page" />
+    </RelativeLayout>
+
+    <View style="@style/View_line" />
+    
+    <!-- 我的收货地址 -->
+    <RelativeLayout
+        android:id="@+id/rlayout_mycount_receiveraddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_50"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="12dp"
+            android:text="我的收货地址"
+            android:textColor="@color/tv_item_color_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv__receiveraddress_next_page"
+            style="@style/wrap_centerVertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/iv_next_page" />
+    </RelativeLayout>
+</LinearLayout>

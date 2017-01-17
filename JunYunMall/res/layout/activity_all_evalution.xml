@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fff"
+    tools:context=".AllEvalutionActivity" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_header" />
+
+    <View
+        android:id="@+id/spilt_view1"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_d6d7dc" />
+
+    <!-- 评价类型 -->
+
+    <com.hhl.library.FlowTagLayout
+        android:id="@+id/evlution_flow_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spilt_view1"
+        android:layout_margin="@dimen/dp_value_12" />
+    <View
+        android:id="@+id/spilt_view2"
+        android:layout_below="@+id/evlution_flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_d6d7dc" />
+    
+    
+    <ListView
+        android:id="@+id/all_evlution_lv"
+         android:layout_width="match_parent"
+         android:layout_below="@+id/spilt_view2"
+         android:layout_height="match_parent">
+        
+    </ListView>
+    
+    
+    
+
+</RelativeLayout>

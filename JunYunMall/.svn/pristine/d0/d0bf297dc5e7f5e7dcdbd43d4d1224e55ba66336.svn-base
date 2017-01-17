@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/home_up_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/in_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_value_1"
+                android:background="@color/color_d6d7dc" />
+            <!-- 轮循广告 -->
+
+            <cn.junyun.mall.view.CarouselView
+                android:id="@+id/relativeLayout_homeback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_back" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_value_8"
+                android:background="@color/color_f1f1f1" />
+            <!-- 签到，疯狂抢购，豆豆商城，精品推荐 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_value_85"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <!-- 签到 -->
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_value_1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/home_sign_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_home_sign_in_logo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_value_6"
+                        android:text="@string/str_sign_in"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <ImageView
+                        android:id="@+id/iv_home_sign_in_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_value_15"
+                        android:src="@drawable/fragment_home_sign_in_logo" />
+                </RelativeLayout>
+                <!-- 疯狂抢购 -->
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_value_1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_panic_buying_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_value_15"
+                        android:src="@drawable/fragment_home_panic_buying_logo" />
+
+                    <TextView
+                        android:id="@+id/tv_home_panic_buying_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_home_panic_buying_logo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/str_panic_buying_logo"
+                        android:textSize="@dimen/text_size_12" />
+                </RelativeLayout>
+                <!-- 豆豆商城 -->
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_value_1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_doudoumall_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_value_15"
+                        android:src="@drawable/fragment_home_doudoumall_logo" />
+
+                    <TextView
+                        android:id="@+id/tv_home_doudoumall_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/iv_home_doudoumall_logo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/str_doudoumall_logo"
+                        android:textSize="@dimen/text_size_12" />
+                </RelativeLayout>
+                <!-- 精品推荐 -->
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_value_1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_recommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_value_15"
+                        android:src="@drawable/fragment_home_recommend" />
+
+                    <TextView
+                        android:id="@+id/tv_home_recommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_home_recommend"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/str_recommend"
+                        android:textSize="@dimen/text_size_12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_value_8"
+                android:background="@color/color_f1f1f1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <!-- 今日特价 -->
+
+                <cn.junyun.mall.view.JinRiTeJiaView
+                    android:id="@+id/iv_sale_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/first" />
+
+                <View
+                    android:layout_width="@dimen/dp_value_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                        <!-- 热卖商品 -->
+
+                        <cn.junyun.mall.view.RemaiXinpinView
+                            android:id="@+id/iv_best_seller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/second" >
+                        </cn.junyun.mall.view.RemaiXinpinView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_value_1"
+                        android:background="@color/color_f1f1f1" />
+                        <!-- 新品上架 -->
+
+                        <cn.junyun.mall.view.RemaiXinpinView
+                            android:id="@+id/iv_new_arrival"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/third" >
+                        </cn.junyun.mall.view.RemaiXinpinView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f1f1f1" />
+            <!-- 4.5 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <!-- 今日好店 -->
+
+              
+
+                    <cn.junyun.mall.view.JinRiHaoDianView
+                        android:id="@+id/iv_good_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/forth" />
+                <!-- 分割线 -->
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_f1f1f1" />
+                <!-- 品牌街 -->
+
+                    <cn.junyun.mall.view.PinPaiJieView
+                        android:id="@+id/iv_brand_street"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fifth" />
+            </LinearLayout>
+            <!--  -->
+
+            <cn.junyun.mall.view.MyListView
+                android:id="@+id/home_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </cn.junyun.mall.view.MyListView>
+        </LinearLayout>
+        <!-- </LinearLayout> -->
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

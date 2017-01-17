@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_value_40"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/city_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_value_40"
+        android:layout_marginLeft="@dimen/dp_value_12"
+        android:gravity="center"
+        android:text="陕西省"
+        android:textColor="@color/color_2b2b2b"
+        android:textSize="@dimen/dp_value_14" />
+
+    <ImageView
+        android:id="@+id/iv_arr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_value_12"
+        android:src="@drawable/iv_next_page" />
+
+</RelativeLayout>

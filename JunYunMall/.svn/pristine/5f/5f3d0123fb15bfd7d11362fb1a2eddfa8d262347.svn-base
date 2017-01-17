@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 新品上新 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.junyun.mall.view.ArrivalView
+        android:id="@+id/arrivalItemIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrival3" >
+    </cn.junyun.mall.view.ArrivalView>
+
+    <cn.junyun.mall.view.ArrivalHint
+        android:id="@+id/arrivalHint"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/arrivalItemIv"
+        android:layout_alignParentLeft="true"
+        android:background="#6f000000"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/arrivalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/arrivalItemIv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="￥236"
+        android:textColor="#fff" />
+
+</RelativeLayout>

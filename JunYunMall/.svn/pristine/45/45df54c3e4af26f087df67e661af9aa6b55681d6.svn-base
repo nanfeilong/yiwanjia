@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInActivity" >
+
+    <!-- 签到 -->
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_header" />
+
+    <cn.junyun.mall.view.SignInBackView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_in_back"
+        android:gravity="center" >
+
+        <!-- 圆形图片app:border_color图片的边框颜色，app:border_width图片的边框线宽 -->
+
+        <cn.junyun.mall.view.ImageViewCircle
+            android:id="@+id/sign_in_head"
+            android:layout_width="@dimen/dp_value_60"
+            android:layout_height="@dimen/dp_value_60"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_value_10"
+            android:src="@drawable/iv_circle"
+            app:border_color="@color/iv_circle_white"
+            app:border_width="@dimen/dp_value_2" />
+
+        <TextView
+            android:id="@+id/tv_sign_in_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_in_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_value_2"
+            android:text="@string/str_sign_in_username"
+            android:textColor="@color/color_fff" />
+    </cn.junyun.mall.view.SignInBackView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_40"
+        android:background="@color/color_fff" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_value_12"
+            android:text="@string/str_sign_in_rule"
+            android:textColor="@color/color_2b2b2b"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_80"
+        android:background="@drawable/sign_in_center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/str_sign_in_first"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_centerVertical="true"
+            android:text="2.每签到一次可获得10个万家豆；"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:text="@string/str_sign_in_third"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_40" >
+
+        <TextView
+            android:id="@+id/leijiTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/str_sign_in_all_no"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/x_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/leijiTv"
+            android:layout_alignBottom="@+id/leijiTv"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/leijiTv"
+            android:text="28"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/x_day"
+            android:layout_alignBottom="@+id/x_day"
+            android:layout_toRightOf="@+id/x_day"
+            android:text="@string/str_sign_in_day"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_40" >
+
+        <TextView
+            android:id="@+id/leijiWanjiadou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/str_sign_in_all_dou"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/accumulateDouNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/leijiWanjiadou"
+            android:layout_alignBottom="@+id/leijiWanjiadou"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/leijiWanjiadou"
+            android:text="280"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/accumulateDouNo"
+            android:src="@drawable/sign_in_wanjiadou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_8"
+        android:background="@color/color_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_50"
+        android:background="#e65154" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="date"
+            android:textColor="@color/color_fff"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/singin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/date"
+            android:layout_alignBottom="@+id/date"
+            android:layout_alignParentRight="true"
+            android:text="TextView"
+            android:textColor="@color/color_fff"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_0"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/sign_in_iv"
+            android:layout_width="@dimen/dp_value_100"
+            android:layout_height="@dimen/dp_value_100"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sign_in_no" />
+
+        <TextView
+            android:id="@+id/sign_in_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/str_sign_in_touch"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+</LinearLayout>

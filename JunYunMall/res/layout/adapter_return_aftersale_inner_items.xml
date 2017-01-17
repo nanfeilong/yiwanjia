@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/rl_myorder_all_goods_details"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_100"
+        android:background="#fafafa" 
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_myorder_all_goods_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/iv_circle" />
+
+        <TextView
+            android:id="@+id/tv_myorder_all_goods_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_myorder_all_goods_photo"
+            android:layout_toRightOf="@+id/iv_myorder_all_goods_photo"
+            android:text="2016春夏季性感女鞋时尚韩国高跟凉鞋粗跟一字带白搭露趾矮跟女鞋"
+            android:textColor="#2b2b2b"
+            android:layout_above="@+id/tv_myorder_all_goodscolor_classification"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_myorder_all_goodscolor_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_myorder_all_goods_describe"
+            android:layout_centerVertical="true"
+            android:text="颜色分类：黑色"
+            android:textColor="#969696"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_myorder_all_goods_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_myorder_all_goodscolor_classification"
+            android:layout_alignBottom="@+id/tv_myorder_all_goodscolor_classification"
+            android:layout_toRightOf="@+id/tv_myorder_all_goodscolor_classification"
+            android:text="，尺码：37码"
+            android:textColor="#969696"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_myorder_all_goods_unit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_myorder_all_goods_photo"
+            android:layout_alignLeft="@+id/tv_myorder_all_goodscolor_classification"
+            android:text="￥168"
+            android:textColor="#e20d11"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_myorder_all_goods_all_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12dp"
+            android:text="退款金额：￥168.04"
+            android:textColor="#2b2b2b"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_transaction_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/tv_myorder_all_goods_all_price"
+            android:text="交易金额：￥168.04"
+            android:textColor="#2b2b2b"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/bt_find_by_face"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/button_selector"
+            android:text="找相似"
+            android:textColor="#2b2b2b"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d6d7dc" />
+
+</LinearLayout>

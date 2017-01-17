@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 直线样式 -->
+    <style name="View_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/split_line</item>
+    </style>
+    <!-- 通用样式 宽高自动 垂直居中 -->
+    <style name="wrap_centerVertical">
+        <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+          <item name="android:layout_centerVertical">true</item>  
+    </style>
+    <!-- 五个按钮的通用样式 -->
+    <style name="mymall_button_style" >
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:background">@null</item>
+         <item name="android:textColor">@color/btn_bottom_tv_gray</item>
+         <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+</resources>

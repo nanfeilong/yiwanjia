@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CheckImageTextStyle">
+        <attr name="imageDrawable" format="reference"></attr>
+        <attr name="imageDrawableChecked" format="reference"></attr>
+        <attr name="drawableWidth" format="dimension"></attr>
+        <attr name="drawableHeight" format="dimension"></attr>
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="text" format="string|reference"></attr>
+        <attr name="checked" format="boolean"></attr>
+        <attr name="textNomalColor" format="color|reference"></attr>
+        <attr name="checkedTextColor" format="color|reference"></attr>
+    </declare-styleable>
+
+    <!-- 自定义圆形图片 -->
+    <declare-styleable name="ImageViewCircle">
+
+        <!-- format为取值类型dimension 尺寸，xml中设置为dp/dip, 字体为sp，color 颜色值，如#ffffff -->
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <!-- 粘性布局 -->
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- 自定义分类Imagive -->
+    <declare-styleable name="ImagiveSecond">
+        <attr name="imageSrc" format="reference"></attr>
+    </declare-styleable>
+    
+      <!-- 下拉刷新 -->
+     <declare-styleable name="StaggeredGridView">
+        <attr name="drawSelectorOnTop" format="boolean" />
+        <attr name="numColumns" format="integer" />
+        <attr name="itemMargin" format="dimension" />
+    </declare-styleable>
+
+</resources>

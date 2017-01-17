@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fff"
+    android:paddingLeft="@dimen/dp_value_10"
+    android:paddingRight="@dimen/dp_value_10" >
+
+    <cn.junyun.mall.view.DouDouItemImageView
+        android:id="@+id/wanJiaDouItemIv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/doudouhuangou" />
+
+    <ImageView
+        android:id="@+id/wanJiaDouItemIv2"
+        android:layout_width="@dimen/dp_value_13"
+        android:layout_height="@dimen/dp_value_13"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wanJiaDouItemIv1"
+        android:layout_marginLeft="@dimen/dp_value_15"
+        android:layout_marginTop="@dimen/dp_value_15"
+        android:src="@drawable/wanjiadou" />
+
+    <TextView
+        android:id="@+id/wanJiaDouItemTv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wanJiaDouItemIv2"
+        android:layout_marginLeft="@dimen/dp_value_3"
+        android:layout_toRightOf="@+id/wanJiaDouItemIv2"
+        android:text="2000"
+        android:textColor="@color/color_e20d11"
+        android:textSize="@dimen/text_size_13" />
+
+    <TextView
+        android:id="@+id/wanJiaDouItemTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wanJiaDouItemTv1"
+        android:layout_marginLeft="@dimen/dp_value_7"
+        android:layout_toRightOf="@+id/wanJiaDouItemTv1"
+        android:text="原价为￥250"
+        android:textColor="@color/color_969696"
+        android:textSize="@dimen/text_size_13" />
+
+    <TextView
+        android:id="@+id/wanJiaDouItemTv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wanJiaDouItemTv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_value_12"
+        android:paddingBottom="@dimen/dp_value_10"
+        android:text="360儿童手表"
+        android:textColor="@color/color_2b2b2b"
+        android:textSize="@dimen/text_size_13" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_113" >
+
+        <ImageView
+            android:id="@+id/recommendIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/today_price_listview" />
+
+        <TextView
+            android:id="@+id/recommendTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp_value_10"
+            android:layout_marginTop="@dimen/dp_value_10"
+            android:layout_toRightOf="@+id/recommendIv"
+            android:text="百搭偏光驾驶镜"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/recommendDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/recommendTitleTv"
+            android:layout_below="@+id/recommendTitleTv"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lines="3"
+            android:text="很长的一段文字描述很长的一很长的长的一很很长的一段文字描述很长的一很长的长的一很很长的一段文字描述很长的一很长的长的一很很长的一段文字描述很长的一很长的长的一很很长的一段文字描述很长的一很长的长的一很长的一段文字描述很长的一很长的一段文字描述很长的一"
+            android:textColor="@color/color_969696"
+            android:textSize="@dimen/text_size_11" />
+
+        <TextView
+            android:id="@+id/recommend_say_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/recommendIv"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_value_10"
+            android:layout_marginRight="@dimen/dp_value_12"
+            android:text="@string/str_recommend_good"
+            android:textColor="@color/color_0ed7a1"
+            android:textSize="@dimen/text_size_11" />
+
+        <TextView
+            android:id="@+id/commend_say_good_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/recommend_say_good"
+            android:layout_toLeftOf="@+id/recommend_say_good"
+            android:text="123"
+            android:textColor="@color/color_0ed7a1"
+            android:textSize="@dimen/text_size_11" />
+
+        <ImageView
+            android:id="@+id/smile"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_alignBottom="@+id/commend_say_good_number"
+            android:layout_toLeftOf="@+id/commend_say_good_number"
+            android:src="@drawable/smile" />
+
+    </RelativeLayout>
+
+</LinearLayout>

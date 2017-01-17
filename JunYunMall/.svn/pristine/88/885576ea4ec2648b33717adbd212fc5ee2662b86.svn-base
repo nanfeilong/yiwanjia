@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout" >
+    
+    
+
+    <cn.junyun.mall.view.MyListView
+        android:id="@+id/babay_evlation_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       android:layout_marginBottom="@dimen/dp_value_0"
+        android:divider="@color/color_e1e1e1"
+        android:dividerHeight="@dimen/dp_value_1" >
+    </cn.junyun.mall.view.MyListView>
+    
+    
+    <!-- 查看全部评论 -->
+
+    <LinearLayout
+        android:id="@+id/see_all_comments_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/babay_evlation_lv"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/spilt_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_1"
+            android:background="@color/color_e1e1e1" />
+
+        <Button
+            android:id="@+id/bottom_bt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_50"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/str_check_all_evlation"
+            android:textColor="@color/color_2b2b2b"
+            android:textSize="@dimen/text_size_12" />
+        
+          <!-- 空白View用来增加高度 -->
+             <View 
+                 android:id="@+id/spaceView"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+</RelativeLayout>

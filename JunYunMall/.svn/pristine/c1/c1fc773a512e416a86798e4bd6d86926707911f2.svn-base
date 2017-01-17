@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_myfootprint_visitdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:text="6月29日"
+        android:textColor="#969696"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_myfootprint_goods_details"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_111"
+        android:background="#fafafa" >
+
+        <ImageView
+            android:id="@+id/iv_myfootprint_goods_photo"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/img1" />
+
+        <TextView
+            android:id="@+id/tv_myfootprint_goods_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_myfootprint_now_price"
+            android:layout_alignTop="@+id/iv_myfootprint_goods_photo"
+            android:layout_toRightOf="@+id/iv_myfootprint_goods_photo"
+            android:text="言吾2016夏装圆领蝙蝠袖真丝雪纺衫女宽松短袖气质纯色衬衫上衣"
+            android:textColor="#2b2b2b"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_myfootprint_now_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_myfootprint_goods_describe"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="￥168"
+            android:textColor="#e20d11"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_myfootprint_before_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_myfootprint_now_price"
+            android:layout_alignBottom="@+id/tv_myfootprint_now_price"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_myfootprint_now_price"
+            android:text="￥368"
+            android:textColor="#969696"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/iv_myfootprint_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_share" />
+    </RelativeLayout>
+
+</LinearLayout>

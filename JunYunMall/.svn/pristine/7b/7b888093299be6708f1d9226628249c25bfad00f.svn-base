@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/home_list_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_8"
+        android:background="@color/color_f1f1f1" />
+
+    <cn.junyun.mall.view.HomeListIvOneView
+        android:id="@+id/home_list_iv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_list_one" />
+
+    <RelativeLayout
+        android:id="@+id/home_list_lvTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_30"
+        android:background="@color/color_fff" >
+
+        <ImageView
+            android:id="@+id/home_list"
+            android:layout_width="@dimen/dp_value_13"
+            android:layout_height="@dimen/dp_value_14"
+            android:layout_alignBottom="@+id/home_list_tv"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_value_8"
+            android:src="@drawable/home_list" />
+
+        <TextView
+            android:id="@+id/home_list_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/home_list"
+            android:text="@string/str_home_list_tv"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_f1f1f1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <cn.junyun.mall.view.HomeListIvTwoView
+            android:id="@+id/home_list_iv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_list_two" />
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1" />
+
+        <cn.junyun.mall.view.HomeListIvThreeView
+            android:id="@+id/home_list_iv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_list_three" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_f1f1f1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <cn.junyun.mall.view.HomeListIvFourView
+            android:id="@+id/home_list_iv_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_list_four" />
+
+        <View
+            android:layout_width="@dimen/dp_value_1.5"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1" />
+
+        <cn.junyun.mall.view.HomeListIvFiveView
+            android:id="@+id/home_list_iv_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_list_five" />
+
+        <View
+            android:layout_width="@dimen/dp_value_1.5"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1" />
+
+        <cn.junyun.mall.view.HomeListIvSixView
+            android:id="@+id/home_list_iv_sixs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_list_six" />
+    </LinearLayout>
+
+</LinearLayout>

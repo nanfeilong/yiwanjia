@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include 
+        android:id="@+id/title"
+        layout="@layout/layout_header" />
+
+    <FrameLayout
+        android:id="@+id/guide_tab_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_above="@+id/layout_guide" />
+
+    <include
+        android:id="@+id/layout_guide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_55"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/layout_bottom" />
+
+</RelativeLayout>

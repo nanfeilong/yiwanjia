@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_value_50"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line" />
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_bottom_red"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <!-- 首页 -->
+
+        <cn.junyun.mall.view.CheckImageText
+            android:id="@+id/home_page_cit"
+            android:layout_width="@dimen/dp_value_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            custom:checked="true"
+            custom:checkedTextColor="@color/text_check"
+            custom:drawableHeight="@dimen/dp_value_30"
+            custom:drawableWidth="@dimen/dp_value_30"
+            custom:imageDrawable="@drawable/home_page_unchecked"
+            custom:imageDrawableChecked="@drawable/home_page_checked"
+            custom:text="@string/str_home_page"
+            custom:textNomalColor="@color/black"
+            custom:textSize="@dimen/text_size_12" />
+
+        <!-- 分类 -->
+
+        <cn.junyun.mall.view.CheckImageText
+            android:id="@+id/classification_cit"
+            android:layout_width="@dimen/dp_value_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            custom:checked="false"
+            custom:checkedTextColor="@color/text_check"
+            custom:drawableHeight="@dimen/dp_value_30"
+            custom:drawableWidth="@dimen/dp_value_30"
+            custom:imageDrawable="@drawable/my_unclassify"
+            custom:imageDrawableChecked="@drawable/my_classify"
+            custom:text="@string/str_classification"
+            custom:textNomalColor="@color/black"
+            custom:textSize="@dimen/text_size_12" />
+
+        <!-- 购物车 -->
+
+        <cn.junyun.mall.view.CheckImageText
+            android:id="@+id/shopping_cart_cit"
+            android:layout_width="@dimen/dp_value_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            custom:checked="false"
+            custom:checkedTextColor="@color/text_check"
+            custom:drawableHeight="@dimen/dp_value_30"
+            custom:drawableWidth="@dimen/dp_value_30"
+            custom:imageDrawable="@drawable/shopping_cart_unchecked"
+            custom:imageDrawableChecked="@drawable/shopping_cart_checked"
+            custom:text="@string/str_shopping_cart"
+            custom:textNomalColor="@color/black"
+            custom:textSize="@dimen/text_size_12" />
+
+        <!-- 我的商城 -->
+
+        <cn.junyun.mall.view.CheckImageText
+            android:id="@+id/my_store_cit"
+            android:layout_width="@dimen/dp_value_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            custom:checked="false"
+            custom:checkedTextColor="@color/text_check"
+            custom:drawableHeight="@dimen/dp_value_30"
+            custom:drawableWidth="@dimen/dp_value_30"
+            custom:imageDrawable="@drawable/my_store_unchecked"
+            custom:imageDrawableChecked="@drawable/my_store_checked"
+            custom:text="@string/str_my_mall"
+            custom:textNomalColor="@color/black"
+            custom:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+</LinearLayout>

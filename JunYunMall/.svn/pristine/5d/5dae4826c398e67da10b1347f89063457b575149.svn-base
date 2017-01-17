@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#f2f2f2</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <!-- 文字颜色 -->
+    <color name="tv_black">#3f3b3a</color>
+    <color name="tv_blue_one">#007aff</color>
+    <color name="tv_gray_one">#8b8b8b</color>
+    <color name="tv_orange_one">#F36A34</color>
+    <color name="tv_blue_two">#B8E3D6</color>
+    <color name="background_bottom_red">#fff</color>
+    
+    <!-- 我的商城文字颜色 -->
+    <color name="btn_bottom_tv_gray">#969696</color>
+    <color name="tv_item_color_black">#2b2b2b</color>
+     <!-- 自定义圆形图片边框颜色 -->
+    <color name="iv_circle_black">#FF222222</color>
+    <color name="iv_circle_white">#FFEEEEEE</color>
+
+    <!-- 分割线颜色 -->
+    <color name="split_line">#cdcdcd</color>
+    <color name="view_line">#d6d7dc</color>
+    <color name="view_line_middle">#f1f1f1</color>
+
+    <!-- 底部菜单选中时对应的字体颜色 -->
+    <color name="text_check">#e20d11</color>
+
+    <!-- 以下为规范命名原则 -->
+    <color name="color_e20d11">#e20d11</color>
+    <color name="color_B8E3D6">#B8E3D6</color>
+    <color name="color_f1f1f1">#f1f1f1</color>
+    <color name="color_2b2b2b">#2b2b2b</color>
+    <color name="color_e1e1e1">#e1e1e1</color>
+    <color name="color_fff">#fff</color>
+    <color name="color_6cc4ea">#6cc4ea</color>
+    <color name="color_d6d7dc">#d6d7dc</color>
+    <color name="color_969696">#969696</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+     <color name="color_9f9f9f">#9f9f9f</color>
+    <color name="color_0eaee3">#0eaee3</color>
+    <color name="color_e3a30e">#e3a30e</color>
+    <color name="color_0ed7a1">#0ed7a1</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_cccccc">#cccccc</color>
+    <!-- popwindow -->
+    <!-- camera pop -->
+    <color name="camera_pop_normal">#5DB8FE</color>
+    
+
+</resources>

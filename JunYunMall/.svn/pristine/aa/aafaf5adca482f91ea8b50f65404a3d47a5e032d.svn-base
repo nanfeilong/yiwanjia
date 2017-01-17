@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注意需要引入xmlns:app="http://schemas.android.com/apk/res-auto"否则无法使用属性 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <cn.junyun.mall.view.RelayoutMyMallTopa
+            android:id="@+id/relativeLayout_mymall_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_mymall_top" >
+
+            <!-- 圆形图片app:border_color图片的边框颜色，app:border_width图片的边框线宽 -->
+
+            <cn.junyun.mall.view.ImageViewCircle
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/dp_value_50"
+                android:layout_height="@dimen/dp_value_50"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/iv_circle"
+                app:border_color="@color/iv_circle_white"
+                app:border_width="@dimen/dp_value_2" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_value_5"
+                android:text="爆炒大熊猫"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/iv_vip_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_username"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dp_value_16"
+                android:src="@drawable/mymall_vip_lv_image" />
+        </cn.junyun.mall.view.RelayoutMyMallTopa>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_mymall_myorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="@string/str_tv_mymall_myorder"
+                android:textColor="#2b2b2b"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/iv_next_page" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/split_line" />
+        <!-- 待付款 待发货 待收货 待评价 退款售后 -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_mymall_btn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_wait_pay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawableTop="@drawable/iv_wait_pay_money"
+                android:text="@string/str_wait_pay_money"
+                android:textColor="@color/btn_bottom_tv_gray"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/btn_wait_send_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/iv_wait_send_goods"
+                android:text="@string/str_wait_send_goods"
+                android:textColor="@color/btn_bottom_tv_gray"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/btn_wait_receive_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/iv_wait_receive_goods"
+                android:text="@string/str_wait_receive_goods"
+                android:textColor="@color/btn_bottom_tv_gray"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/btn_wait_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/iv_wait_comment"
+                android:src="@drawable/iv_wait_comment"
+                android:text="@string/str_wait_comment"
+                android:textColor="@color/btn_bottom_tv_gray"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/btn_return_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/iv__return_goods"
+                android:text="@string/str_return_goods"
+                android:textColor="@color/btn_bottom_tv_gray"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_line" />
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/view_line_middle" />
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_line" />
+         
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_50"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_mymall_mywallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iv_my_wallet" />
+
+            <TextView
+                android:id="@+id/tv_mymall_mywallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_mymall_mywallet"
+                android:layout_toRightOf="@+id/iv_mymall_mywallet"
+                android:text="@string/str_tv_mymall_mywallet"
+                android:textColor="@color/tv_item_color_black"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_mywallet_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/iv_next_page" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/split_line" />
+        <!-- 我的财产 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_50"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_mymall_myproperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iv_my_property" />
+
+            <TextView
+                android:id="@+id/tv_mymall_myproperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_mymall_myproperty"
+                android:layout_toRightOf="@+id/iv_mymall_myproperty"
+                android:text="@string/str_tv_mymall_myproperty"
+                android:textColor="@color/tv_item_color_black"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_myproperty_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/iv_next_page" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/split_line" />
+        <!-- 我的成就 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_50"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_mymall_myachievement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iv_my_achievement" />
+
+            <TextView
+                android:id="@+id/tv_mymall_myachievement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_mymall_myachievement"
+                android:layout_toRightOf="@+id/iv_mymall_myachievement"
+                android:text="@string/str_tv_mymall_myachievement"
+                android:textColor="@color/tv_item_color_black"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_myachievement_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/iv_next_page" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/split_line" />
+        <!-- 我的账户 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_50"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_mymall_myaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iv_my_account" />
+
+            <TextView
+                android:id="@+id/tv_mymall_myaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_mymall_myaccount"
+                android:layout_toRightOf="@+id/iv_mymall_myaccount"
+                android:text="@string/str_tv_mymall_myaccount"
+                android:textColor="@color/tv_item_color_black"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_myaccount_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/iv_next_page" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/split_line" />
+        <!-- 我的收藏 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_50"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_mymall_myenshrine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iv_my_enshrine" />
+
+            <TextView
+                android:id="@+id/tv_mymall_myenshrine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_mymall_myenshrine"
+                android:layout_toRightOf="@+id/iv_mymall_myenshrine"
+                android:text="@string/str_tv_mymall_mycollect"
+                android:textColor="@color/tv_item_color_black"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_myenshrine_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/iv_next_page" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/split_line" />
+        <!-- 我的足迹 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_value_50"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_mymall_myfootprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iv_my_footprint" />
+
+            <TextView
+                android:id="@+id/tv_mymall_myfootprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_mymall_myfootprint"
+                android:layout_toRightOf="@+id/iv_mymall_myfootprint"
+                android:text="@string/str_tv_mymall_myfootprint"
+                android:textColor="@color/tv_item_color_black"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_myfootprint_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/iv_next_page" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_fafafa"
+    android:paddingBottom="@dimen/dp_value_10"
+    android:paddingTop="@dimen/dp_value_10" >
+
+    <ImageView
+        android:id="@+id/pic_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_value_12"
+        android:src="@drawable/nvxie" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_value_10"
+        android:layout_marginRight="@dimen/dp_value_10"
+        android:layout_toRightOf="@+id/pic_iv"
+        android:text="2016春夏季杏干女鞋时尚韩国高跟凉鞋粗跟一字带百搭露指矮跟女鞋"
+        android:textColor="@color/color_2b2b2b"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/color_category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginLeft="@dimen/dp_value_10"
+        android:layout_marginTop="@dimen/dp_value_5"
+        android:layout_toRightOf="@id/pic_iv"
+        android:text="@string/str_color_category"
+        android:textColor="@color/color_969696"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/color_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginTop="@dimen/dp_value_5"
+        android:layout_toRightOf="@id/color_category_tv"
+        android:text="黑色"
+        android:textColor="@color/color_969696"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/str_size_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginLeft="@dimen/dp_value_5"
+        android:layout_marginTop="@dimen/dp_value_5"
+        android:layout_toRightOf="@+id/color_tv"
+        android:text="@string/str_size"
+        android:textColor="@color/color_969696"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/size_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginTop="@dimen/dp_value_5"
+        android:layout_toRightOf="@id/str_size_tv"
+        android:text="37码"
+        android:textColor="@color/color_969696"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_e20d11"
+        android:layout_below="@+id/size_tv"
+        android:layout_marginTop="@dimen/dp_value_5"
+        android:textSize="@dimen/text_size_14"
+        android:text="￥14"
+        android:layout_toRightOf="@+id/pic_iv"
+        android:layout_marginLeft="@dimen/dp_value_10"
+         />
+
+</RelativeLayout>

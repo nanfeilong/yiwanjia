@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    tools:context=".AddressNewActivity" >
+
+    <include
+        android:id="@+id/inc_addaress_new"
+        layout="@layout/layout_header" />
+
+    <View
+        android:id="@+id/view_address"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/view_line_middle" />
+
+    <RelativeLayout
+        android:id="@+id/rl_add_consignee"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_50"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_consignee_tittle"
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="收货人     "
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:id="@+id/edt_consignee_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_consignee_tittle"
+            android:layout_toRightOf="@+id/tv_consignee_tittle"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="高艳"
+            android:textColor="@color/tv_item_color_black"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mymall_myproperty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_50"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_contact_number_tittle"
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="联系电话"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:id="@+id/edt_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_contact_number_tittle"
+            android:layout_toRightOf="@+id/tv_contact_number_tittle"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="18292426051"
+            android:textColor="@color/tv_item_color_black"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_inthe_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_50"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_inthe_area_tittle"
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="所在地区"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:id="@+id/edt_inthe_area"
+            style="@style/wrap_centerVertical"
+            android:layout_alignBottom="@+id/tv_inthe_area_tittle"
+            android:layout_toLeftOf="@+id/iv_inthe_area_next_page"
+            android:layout_toRightOf="@+id/tv_inthe_area_tittle"
+            android:background="@null"
+            android:hint="请选择所在地区"
+            android:textColor="#969696"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_inthe_area_next_page"
+            style="@style/wrap_centerVertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/iv_next_page" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_street"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_50"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_street_tittle"
+            style="@style/wrap_centerVertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="街道/社区"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:id="@+id/edt_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_street_tittle"
+            android:layout_toLeftOf="@+id/iv_myproperty_next_page"
+            android:layout_toRightOf="@+id/tv_street_tittle"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="丈八沟街道"
+            android:textColor="#969696"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_myproperty_next_page"
+            style="@style/wrap_centerVertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/iv_next_page" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/tv_definite_address"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="详细地址 汇鑫IBC-D座 12楼1206室"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:textColor="#969696"
+        android:textSize="@dimen/text_size_14" />
+
+</LinearLayout>

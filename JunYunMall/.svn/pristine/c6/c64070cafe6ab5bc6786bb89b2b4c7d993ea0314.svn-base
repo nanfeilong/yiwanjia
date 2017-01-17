@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_value_12"
+        android:id="@+id/evlation_description_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_value_12"
+        android:layout_marginRight="@dimen/dp_value_12"
+        android:text="很好的一件衣服然后就是我的平平敬爱倒阿斯顿纠纷案件发票阿斯蒂芬破案抖擞发哦快递费恐怕是的"
+        android:textColor="@color/color_2b2b2b"
+        android:textSize="@dimen/text_size_12" />
+    
+    
+       <HorizontalScrollView
+        android:id="@+id/id_horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:id="@+id/id_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        
+        android:layout_marginTop="@dimen/dp_value_5"
+        android:layout_marginRight="@dimen/dp_value_12"
+        android:layout_marginBottom="@dimen/dp_value_12"
+        android:layout_marginLeft="@dimen/dp_value_12">
+        
+        <TextView
+             android:id="@+id/name_tv"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_969696"
+            android:textSize="@dimen/text_size_10"
+            android:text="超级大坏蛋"/>
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_marginLeft="@dimen/dp_value_10"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_969696"
+            android:textSize="@dimen/text_size_10"
+            android:text="2016.7.7"/>
+        <TextView
+            android:id="@+id/color_size_tv"
+            android:layout_marginLeft="@dimen/dp_value_5"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_969696"
+            android:textSize="@dimen/text_size_10"
+            android:text="颜色分类尺码"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

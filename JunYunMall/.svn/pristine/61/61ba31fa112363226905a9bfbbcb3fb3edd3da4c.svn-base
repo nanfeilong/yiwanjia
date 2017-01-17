@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GoodShopActivity" >
+
+    <!-- 今日好点 -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/good_shop_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 引入自定义head -->
+
+            <include
+                android:id="@+id/title"
+                layout="@layout/layout_header" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_value_1"
+                android:background="@color/color_d6d7dc" />
+
+            <cn.junyun.mall.view.MyListView
+                android:id="@+id/good_shop_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

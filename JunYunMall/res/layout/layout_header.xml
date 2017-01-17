@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white" >
+
+       <!-- 回退箭头 -->
+    <Button
+        android:id="@+id/btnHeaderBack"
+        android:layout_width="12dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/dp_value_10"
+        android:visibility="gone"
+        android:textColor="@android:color/white" 
+        />
+    
+      <!-- 最左边图片为正方形-->
+    <Button
+        android:id="@+id/left_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="left|center_vertical"
+        android:visibility="gone"
+        android:textColor="@android:color/white" 
+        />
+    
+       <!--搜索框 --> 
+       <EditText 
+           android:id="@+id/search_et"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_value_30"
+            android:layout_toRightOf="@+id/btnHeaderBack"
+            android:layout_toLeftOf="@+id/btnHeaderExtra"
+            android:layout_marginLeft="@dimen/dp_value_20"
+            android:layout_marginRight="@dimen/dp_value_20"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dp_value_12"
+            android:textColor="@color/color_969696"
+            android:textSize="@dimen/text_size_14"
+            android:background="@drawable/et_category_round_corner_grey_style"
+            android:visibility="gone"/>
+   
+
+     <!-- 中间的标题 -->
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/text_check"
+        android:textSize="20sp" />
+    <!-- android:text="@string/app_name" -->
+
+    <!-- 最右边图片-->
+    <Button
+        android:id="@+id/btnHeaderExtra"
+        android:layout_width="@dimen/dp_value_20"
+        android:layout_height="@dimen/dp_value_20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/dp_value_12"
+        android:visibility="gone" />
+      
+    <!-- 靠近回退箭头的标题 -->
+    <TextView
+        android:id="@+id/back_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="1.6dp"
+        android:layout_alignBottom="@+id/tvHeaderTitle"
+        android:layout_toRightOf="@+id/btnHeaderBack"
+         />
+
+</RelativeLayout>

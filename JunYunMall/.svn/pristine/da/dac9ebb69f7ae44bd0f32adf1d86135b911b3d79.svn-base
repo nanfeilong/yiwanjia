@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_view"
+    tools:context=".AddressManageActivity" >
+    
+    
+
+    <include
+        android:id="@+id/addresstitle"
+        layout="@layout/layout_header" />
+
+    <View
+        android:id="@+id/view_address"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/addresstitle"
+        android:background="@color/view_line_middle" />
+
+    <ListView
+        android:id="@+id/lv_address_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_new_address"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_address"
+        android:divider="#f1f1f1"
+        android:dividerHeight="10dp" >
+    </ListView>
+    
+
+    <Button
+        android:id="@+id/btn_address_new"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#e20d11"
+        android:text="添加新地址"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

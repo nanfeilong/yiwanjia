@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BrandsStreetActivity" >
+
+    <!-- 品牌街 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_d6d7dc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <cn.junyun.mall.view.BrandsStreetTopOneView
+            android:id="@+id/brand_street_top1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/brands_street_top1" />
+
+        <View
+            android:layout_width="@dimen/dp_value_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/color_d6d7dc" />
+
+        <cn.junyun.mall.view.BrandsStreetTopTwoView
+            android:id="@+id/brand_street_top2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/brands_street_top2" />
+
+        <View
+            android:layout_width="@dimen/dp_value_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/color_d6d7dc" />
+
+        <cn.junyun.mall.view.BrandsStreetTopThreeView
+            android:id="@+id/brand_street_top3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/brands_street_top3" />
+
+        <View
+            android:layout_width="@dimen/dp_value_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/color_d6d7dc" />
+
+        <cn.junyun.mall.view.BrandsStreetTopFourView
+            android:id="@+id/brand_street_top4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/brands_street_top4" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_value_1"
+        android:background="@color/color_d6d7dc" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/brands_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <cn.junyun.mall.view.MyListView
+                android:id="@+id/brands_street_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

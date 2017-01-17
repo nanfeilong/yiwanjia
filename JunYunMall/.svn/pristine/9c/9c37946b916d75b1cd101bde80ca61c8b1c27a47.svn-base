@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <View
+        android:id="@+id/spilt_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_d6d7dc"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f1f1f1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/spilt_line"
+        android:baselineAligned="false"
+        android:weightSum="5" >
+
+        <ListView
+            android:id="@+id/category_list_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/color_f1f1f1"
+            android:cacheColorHint="#00000000"
+            android:clickable="true"
+            android:divider="@color/color_f1f1f1"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+           android:layout_marginLeft="@dimen/dp_value_5"
+           android:layout_marginRight="@dimen/dp_value_5"
+            android:layout_weight="4.0"
+            android:orientation="vertical" >
+            
+            
+            <Button 
+                android:id="@+id/in_category_bt"
+                 android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_value_30"
+                android:layout_marginTop="@dimen/dp_value_10"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:background="@drawable/btn_category_round_corner_red_style"/>
+
+            <GridView
+                android:id="@+id/category_gride_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:horizontalSpacing="@dimen/dp_value_5"
+                android:numColumns="3"
+                android:scrollbars="none" >
+            </GridView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
